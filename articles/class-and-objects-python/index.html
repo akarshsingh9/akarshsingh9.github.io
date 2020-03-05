@@ -1,0 +1,125 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <title>Learn about Class and Objects in Python | Akarsh Singh</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>   
+    <div>
+        <a href="\">Akarsh Singh</a>
+        
+            
+            <a href="/articles/">Articles</a>
+        
+            
+            <a href="/projects/">Projects</a>
+        
+            
+            <a href="/index.xml">RSS</a>
+        
+    </div>
+</nav>
+        
+<section>
+    <div><img class="is-rounded" src="/images/articles/python.png">
+    </div>   
+    <p>Learn about Class and Objects in Python</p>
+    
+    <time datetime="2020-03-04">Mar 4, 2020</time>
+    
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/cip-archive">cip-archive</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/programming">programming</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/python">python</a></span>
+        
+    
+</section>
+<article>
+    <p><em>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 5th June 2017.</em></p>
+<p>The object oriented concepts in Python programming can be implemented using classes and objects. In this article, you will learn how to create class and object.</p>
+<h2 id="creating-class-">Creating Class –</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ClassName</span>:
+  class_body
+</code></pre></td></tr></table>
+</div>
+</div><p>The class_body consists of all the components to define the class members such as data attributes and functions.
+Below is the example for a simple Python class :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Student</span>:
+ studCount <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+ <span style="color:#66d9ef">def</span> __init__(self, name, marks):
+    self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+    self<span style="color:#f92672">.</span>marks <span style="color:#f92672">=</span> marks
+    Student<span style="color:#f92672">.</span>studCount <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+ <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">displayStudentCount</span>(self):
+    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Total no. of Students </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>, Student<span style="color:#f92672">.</span>studCount)
+ <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">displayinfo</span>(self):
+    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Name : </span><span style="color:#e6db74">&#34;</span>, self<span style="color:#f92672">.</span>name, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">, Marks: </span><span style="color:#e6db74">&#34;</span>, self<span style="color:#f92672">.</span>marks)
+</code></pre></td></tr></table>
+</div>
+</div><p>The variable <strong>studCount</strong> is a class variable whose value is shared among all instances or objects of this class Student. The variable can be accessed as <strong>Student.studCount</strong> from inside the class or outside the class.</p>
+<p>The first method <strong>_<em>init_</em>()</strong> is a special method or function, which is called a class constructor or initialization method. Python calls this method every time when you create a new instance or object of this class. According to the concepts of classes, class attributes can be assigned values from inside the class.To assign them values every time you create an object of the class you need to use a constructor. A constructor is a special function whose sole purpose is to assign values to the class variables.</p>
+<p>You can declare other class methods like normal Python functions. Just keep in mind that the first argument to each method defined in the class is self. Python adds the self-argument to the list of arguments for you.You do not need to include it when you call the methods. The <strong>self</strong> keyword refers the class instances to avoid ambiguity; it is similar to <strong>this</strong> in other programming languages.</p>
+<h2 id="creating-class-objects">Creating Class Objects</h2>
+<p>To create objects of a class, you have to call the class using ClassName you have used and you have to pass in all the arguments that its _<em>init_</em> method accepts.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">This will create the first object for the Student class</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+student1 <span style="color:#f92672">=</span> Student(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Sam</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">80.5</span>)
+<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">This would create the second object of Employee class</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+student2 <span style="color:#f92672">=</span> Student(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Roberts</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">85.0</span>)
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="accessing-class-members">Accessing Class Members</h2>
+<p>You access the object’s attributes or class members such as functions using the dot operator with the object. You can access a class variable using <strong>ClassName</strong> followed by a dot operator</p>
+<h2 id="data-hiding">Data Hiding</h2>
+<p>You can make an object’s attributes visible outside the class definition. It is similar to making an object’s attribute private in the class definition. You need to name the attributes with a double underscore prefix to the name of the attribute. The attributes with a double underscore, in the beginning, are not directly accessible outside the class.</p>
+<p><strong>Example:</strong>
+<strong>__name, __age</strong></p>
+<h2 id="destroying-objects-garbage-collection">Destroying Objects (Garbage Collection)</h2>
+<p>In Python, everything is an object, all the data types like numbers, string, list, etc, operators, built-in functions, all are python objects. Python deletes unnecessary objects such built-in types or class instances automatically to free the memory space. The process by which Python periodically claims the blocks of memory that are no longer in use is termed Garbage Collection.</p>
+
+</article>
+
+        <footer>
+    
+</footer>
+    </div>
+  </body>
+</html>

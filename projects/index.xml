@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Akarsh Singh</title>
+    <link>https://akarshsingh.com/projects/</link>
+    <description>Recent content in Projects on Akarsh Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2020 12:57:49 +0530</lastBuildDate>
+    
+	<atom:link href="https://akarshsingh.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

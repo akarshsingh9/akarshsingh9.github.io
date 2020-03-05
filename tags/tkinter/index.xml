@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tkinter on Akarsh Singh</title>
+    <link>https://akarshsingh.com/tags/tkinter/</link>
+    <description>Recent content in tkinter on Akarsh Singh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 05 Mar 2020 00:19:34 +0530</lastBuildDate>
+    
+	<atom:link href="https://akarshsingh.com/tags/tkinter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started with Tkinter in Python</title>
+      <link>https://akarshsingh.com/articles/getting-started-tkinter-python/</link>
+      <pubDate>Thu, 05 Mar 2020 00:19:34 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/getting-started-tkinter-python/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.
+Here you will learn how to make GUI applications in Tkinter using Python. If this is first you are ever experiencing python, then we highly recommend you to check out our python tutorials. They will teach you the basics of Python language and in that way, you will be ready to jump into this stuff.</description>
+    </item>
+    
+  </channel>
+</rss>
