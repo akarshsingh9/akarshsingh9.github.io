@@ -6,10 +6,102 @@
     <description>Recent content in python on Akarsh Singh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Mar 2020 00:19:34 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2020 01:43:37 +0530</lastBuildDate>
     
 	<atom:link href="https://akarshsingh.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to create message box in Tkinter</title>
+      <link>https://akarshsingh.com/articles/create-message-box-in-tkinter/</link>
+      <pubDate>Sun, 08 Mar 2020 01:43:37 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/create-message-box-in-tkinter/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was published on 12th June 2017. Author of this post is Rahul Choudhary.
+In this chapter, we will learn how to make Tkinter message box. It is equivalent to alert in javascript, pop-ups that appear on the screen. They can either give you a plain text, like a piece of information or they, can also ask you a question like &amp;ldquo;do you want to leave this site&amp;rdquo;, yes or no.</description>
+    </item>
+    
+    <item>
+      <title>How to add status bar in Tkinter App</title>
+      <link>https://akarshsingh.com/articles/add-status-bar-in-tkinter/</link>
+      <pubDate>Sun, 08 Mar 2020 01:34:46 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/add-status-bar-in-tkinter/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was published on 12th June 2017. Author of this post is Rahul Choudhary.
+In the previous chapter, we learned how to make toolbar and drop down menus. In this chapter, we will learn how to make a status bar. It is just a text written on the bottom of the window that shows the status of the file on which you are working on or any other thing.</description>
+    </item>
+    
+    <item>
+      <title>How to create drop down menus in Tkinter App</title>
+      <link>https://akarshsingh.com/articles/create-drop-down-menus-tkinter/</link>
+      <pubDate>Sun, 08 Mar 2020 01:26:19 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/create-drop-down-menus-tkinter/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was published on 12th June 2017. Author of this post is Rahul Choudhary.
+In this chapter, we will learn how to build a basic framework of a common piece of software and that includes, making the drop down menus. Every software we buy has menus at the top that drop down when clicked. We will also learn how to make a toolbar.</description>
+    </item>
+    
+    <item>
+      <title>Implement Python Class in Tkinter</title>
+      <link>https://akarshsingh.com/articles/implement-python-class-in-tkinter/</link>
+      <pubDate>Sat, 07 Mar 2020 21:26:49 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/implement-python-class-in-tkinter/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.
+In this chapter we will learn how to use classes with Tkinter and whenever we work with a professional software or whenever we will make more than just simple buttons, this is the standard technique that we will use because it is standard not only for making GUI applications but also to make software.</description>
+    </item>
+    
+    <item>
+      <title>How to implement mouse click event in Tkinter</title>
+      <link>https://akarshsingh.com/articles/mouse-click-event-in-tkinter/</link>
+      <pubDate>Sat, 07 Mar 2020 21:20:52 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/mouse-click-event-in-tkinter/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.
+Whenever we use Tkinter, we are not just limited to bind one function to one widget. With widgets, we can bind multiple events to it depending on what we do with that widget, it behaves in different kind of ways. We can have a button, and if we left click it, something happens and if you right click it, something else happens.</description>
+    </item>
+    
+    <item>
+      <title>How to bind functions to Tkinter Layout</title>
+      <link>https://akarshsingh.com/articles/bind-function-to-layout-tkinter/</link>
+      <pubDate>Sat, 07 Mar 2020 21:12:49 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/bind-function-to-layout-tkinter/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was published on 12th June 2017. Author of this post is Rahul Choudhary.
+We know how to make a layout in a couple of different ways. We know how to organize our widgets around our screen. Let’s learn how to make GUI actually interact with our computer program.
+In this chapter, we will learn how to bind functions to widgets.</description>
+    </item>
+    
+    <item>
+      <title>Working with Grid Layout in Tkinter</title>
+      <link>https://akarshsingh.com/articles/grid-layout-in-tkinter/</link>
+      <pubDate>Sat, 07 Mar 2020 21:04:58 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/grid-layout-in-tkinter/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.
+In this chapter, we are going to organize the widgets in the main window in a grid layout. Previously, we used pack(), which just places them on the screen. We could just change the position of the widget i.e., we could place them one over other or side by side.</description>
+    </item>
+    
+    <item>
+      <title>How to fit widgets in your Tkinter Layout</title>
+      <link>https://akarshsingh.com/articles/how-to-fit-widgets-in-tkinter-layout/</link>
+      <pubDate>Sat, 07 Mar 2020 20:48:59 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/how-to-fit-widgets-in-tkinter-layout/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.
+In this chapter, you will learn how to fit widgets in our layout. The basic structure of the program is going to be the same i.e.,
+from tkinter import *var = Tk()var.mainloop()So let’s make some labels. We will not add any frame in this window.</description>
+    </item>
+    
+    <item>
+      <title>How to organize your Layout in Tkinter</title>
+      <link>https://akarshsingh.com/articles/how-to-organize-layout-tkinter/</link>
+      <pubDate>Sat, 07 Mar 2020 20:37:36 +0530</pubDate>
+      
+      <guid>https://akarshsingh.com/articles/how-to-organize-layout-tkinter/</guid>
+      <description>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.
+In the last chapter we learned how to make a very simple window, we also learned how to add text and also how to make our window appear constantly without disappearing quickly. Before we add a bunch of widgets, we have to learn how to organize the layout.</description>
+    </item>
     
     <item>
       <title>Getting Started with Tkinter in Python</title>
@@ -29,7 +121,7 @@ Here you will learn how to make GUI applications in Tkinter using Python. If thi
       <guid>https://akarshsingh.com/articles/class-and-objects-python/</guid>
       <description>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 5th June 2017.
 The object oriented concepts in Python programming can be implemented using classes and objects. In this article, you will learn how to create class and object.
-Creating Class – 1 2  class ClassName: class_body   The class_body consists of all the components to define the class members such as data attributes and functions.</description>
+Creating Class – 1 2  class ClassName:class_body  The class_body consists of all the components to define the class members such as data attributes and functions.</description>
     </item>
     
   </channel>

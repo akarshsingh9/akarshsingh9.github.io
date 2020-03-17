@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <title>Working with Grid Layout in Tkinter | Akarsh Singh</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>   
+    <div>
+        <a href="\">Akarsh Singh</a>
+        
+            
+            <a href="/articles/">Articles</a>
+        
+            
+            <a href="/projects/">Projects</a>
+        
+            
+            <a href="/index.xml">RSS</a>
+        
+    </div>
+</nav>
+        
+<section>
+    <div><img class="is-rounded" src="/images/articles/gui.png">
+    </div>   
+    <p>Working with Grid Layout in Tkinter</p>
+    
+    <time datetime="2020-03-07">Mar 7, 2020</time>
+    
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/cip-archive">cip-archive</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/python">python</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/tkinter">tkinter</a></span>
+        
+    
+</section>
+<article>
+    <p><em>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.</em></p>
+<p>In this chapter, we are going to organize the widgets in the main window in a grid layout. Previously, we used pack(), which just places them on the screen. We could just change the position of the widget i.e., we could place them one over other or side by side. But it didn’t give you a lot of control to say exactly where you want to pack it in.</p>
+<p>In grid layout, we can line up our rows and columns. We can specify the exact row and column in which the widget should come.</p>
+<p>Now, let’s make 2 labels and 2 entry widgets because we need the stuff to organize. It will be kind of a login screen where we enter name and password.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name <span style="color:#f92672">=</span> Label(var, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;name&#34;</span>)
+password <span style="color:#f92672">=</span> Label(var, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;password&#34;</span>)
+</code></pre></div><p>Now, whenever you want to allow the user to enter a simple number or name or password or anything we have to use something called entry. It is the same thing as an input in web design. It is a blank single line of a text form.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">entry1 <span style="color:#f92672">=</span> Entry(var)
+entry2 <span style="color:#f92672">=</span> Entry(var)
+</code></pre></div><p>We need one for the name and one for a password. Now, we have 2 text prompts and 2 input fields.</p>
+<p>To organize it, think of this as an excel sheet. We have rows that go left and right and column that goes up and down. By default, if we don’t specify one, it is going to assume the first. If we put just row = 2, its gonna assume it as the first column.</p>
+<p>In order to place anything, just write where do you want to place this label and how do you want to place it.
+Both the labels will go like this,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+password<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p>Now, to position those entries, we will write,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">entry1<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+entry2<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</code></pre></div><p>In the above window, the name and password are center aligned, we need them to be right aligned.
+To do that, we have already placed the label in the window. Now, whenever we want to align it to either right, left, top or bottom, we will use a new parameter called sticky. If we want to place it to the right, we will write sticky = E.</p>
+<p>Whenever we are using the grid, it’s not going to take left, right, top or bottom. It’s gonna take N E W S. North on the top, East to right, West on the left and South on the bottom.
+So the labels will be now,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">name<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sticky <span style="color:#f92672">=</span> E)
+password<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, sticky <span style="color:#f92672">=</span> E)
+</code></pre></div><p>If we are making a login for the website, they have a checkbox called ‘keep me logged in’. Making a checkbox is real simple.
+To make a checkbox, use a parameter Check button and in it, specify the parent window or the frame you want to put it in. then write the text you want it to show. For eg., ‘keep me logged in’.
+Now we want to place it in the main window. Now, to place the checkbox in the center of both the label and entry box (putting it into 2 columns together), we need to write columnspan = 2 in place of a column. This will combine 2 columns and treat it as one column.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c <span style="color:#f92672">=</span> Checkbutton(var, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;keep me logged in&#34;</span>)
+c<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, columnspan<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</code></pre></div><h2 id="final-code">Final Code</h2>
+<p>the whole program combined will look like,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> Tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+var <span style="color:#f92672">=</span> Tk()
+name <span style="color:#f92672">=</span> Label(var, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;name&#34;</span>)
+password <span style="color:#f92672">=</span> Label(var, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;password&#34;</span>)
+entry1 <span style="color:#f92672">=</span> Entry(var)
+entry2 <span style="color:#f92672">=</span> Entry(var)
+name<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, sticky <span style="color:#f92672">=</span> E)
+password<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, sticky <span style="color:#f92672">=</span> E)
+entry1<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+entry2<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, column<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+c <span style="color:#f92672">=</span> Checkbutton(var, text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;keep me logged in&#34;</span>)
+c<span style="color:#f92672">.</span>grid(row<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, columnspan<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+var<span style="color:#f92672">.</span>mainloop() 
+</code></pre></div>
+</article>
+
+        <footer>
+    
+</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <title>How to create message box in Tkinter | Akarsh Singh</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>   
+    <div>
+        <a href="\">Akarsh Singh</a>
+        
+            
+            <a href="/articles/">Articles</a>
+        
+            
+            <a href="/projects/">Projects</a>
+        
+            
+            <a href="/index.xml">RSS</a>
+        
+    </div>
+</nav>
+        
+<section>
+    <div><img class="is-rounded" src="/images/articles/gui.png">
+    </div>   
+    <p>How to create message box in Tkinter</p>
+    
+    <time datetime="2020-03-08">Mar 8, 2020</time>
+    
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/cip-archive">cip-archive</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/python">python</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/tkinter">tkinter</a></span>
+        
+    
+</section>
+<article>
+    <p><em>This is an archived blog post from Codeinpython website that i used to run. Original post was published on 12th June 2017. Author of this post is Rahul Choudhary.</em></p>
+<p>In this chapter, we will learn how to make Tkinter message box. It is equivalent to alert in javascript, pop-ups that appear on the screen. They can either give you a plain text, like a piece of information or they, can also ask you a question like &ldquo;do you want to leave this site&rdquo;, yes or no. To create a message box, the first thing we have to do is to import tkinter.messagebox.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> tkinter.messagebox
+</code></pre></div><p>Firstly, we are going to make a message box that is simple and will display just a text. Nothing that you can interact with, taking any inputs or pressing any buttons. Now, in the tkinter.messagebox class, there is a function called showinfo()
+This function takes a couple of parameters. Some of them are optional, some of them are necessary. Firstly, it asks for the title of the window. Till now, the title for the window was Tk by default but now we can specify our own title. It is the text that is displayed on the top of the window beside the close button. Secondly, it asks for the text we want to be displayed on the message box.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">tkinter<span style="color:#f92672">.</span>messagebox<span style="color:#f92672">.</span>showinfo(<span style="color:#e6db74">&#39;code in python&#39;</span>, <span style="color:#e6db74">&#39;this is the tkinter tutorial&#39;</span>)
+</code></pre></div><p>Now we are going to make a message box that will give us a couple of options i.e., yes or no. we have to store it in a variable so that we can us it later in the program. The function used for this type of message box is askquestion(). Its first parameter asks for the window title. The second one asks for the yes or no question.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">ans <span style="color:#f92672">=</span> tkinter<span style="color:#f92672">.</span>messagebox<span style="color:#f92672">.</span>askquestion(<span style="color:#e6db74">&#39;quiz&#39;</span>, <span style="color:#e6db74">&#39;do you like python&#39;</span>)
+</code></pre></div><p>Now we can make a basic if statement. Make sure you have a ‘==’ sign. Never put is or ‘=’ sign.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> ans <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;yes&#39;</span>:
+   <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;welcome to my website&#34;</span>) 
+</code></pre></div><p>Now, whenever you will press yes button, it will process the tkinter.messagebox.askquestion and analyze the answer and display the result accordingly.</p>
+<h2 id="final-code--message-box">Final Code – Message Box</h2>
+<p>Full program for message box is,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+<span style="color:#f92672">import</span> tkinter.messagebox
+
+var <span style="color:#f92672">=</span> Tk()
+tkinter<span style="color:#f92672">.</span>messagebox<span style="color:#f92672">.</span>showinfo(<span style="color:#e6db74">&#39;code in python&#39;</span>, <span style="color:#e6db74">&#39;this is the tkinter tutorial&#39;</span>)
+ans <span style="color:#f92672">=</span> tkinter<span style="color:#f92672">.</span>messagebox<span style="color:#f92672">.</span>askquestion(<span style="color:#e6db74">&#39;quiz&#39;</span>, <span style="color:#e6db74">&#39;do you like python&#39;</span>)
+<span style="color:#66d9ef">if</span> ans <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;yes&#39;</span>:
+   <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;welcome to my website&#34;</span>)
+
+var<span style="color:#f92672">.</span>mainloop() 
+</code></pre></div>
+</article>
+
+        <footer>
+    
+</footer>
+    </div>
+  </body>
+</html>

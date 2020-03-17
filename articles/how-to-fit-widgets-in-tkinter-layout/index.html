@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <title>How to fit widgets in your Tkinter Layout | Akarsh Singh</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>   
+    <div>
+        <a href="\">Akarsh Singh</a>
+        
+            
+            <a href="/articles/">Articles</a>
+        
+            
+            <a href="/projects/">Projects</a>
+        
+            
+            <a href="/index.xml">RSS</a>
+        
+    </div>
+</nav>
+        
+<section>
+    <div><img class="is-rounded" src="/images/articles/gui.png">
+    </div>   
+    <p>How to fit widgets in your Tkinter Layout</p>
+    
+    <time datetime="2020-03-07">Mar 7, 2020</time>
+    
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/cip-archive">cip-archive</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/python">python</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/tkinter">tkinter</a></span>
+        
+    
+</section>
+<article>
+    <p><em>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.</em></p>
+<p>In this chapter, you will learn how to fit widgets in our layout. The basic structure of the program is going to be the same i.e.,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+var <span style="color:#f92672">=</span> Tk()
+var<span style="color:#f92672">.</span>mainloop()
+</code></pre></div><p>So let’s make some labels. We will not add any frame in this window. We will just add labels in our main window.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">label1 <span style="color:#f92672">=</span> Label(var, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;one&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>, fg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;blue&#34;</span>)
+label2 <span style="color:#f92672">=</span> Label(var, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;two&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>, fg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yellow&#34;</span>)
+label3 <span style="color:#f92672">=</span> Label(var, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;three&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yellow&#34;</span>, fg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>)
+</code></pre></div><p>the labels will show the text “one”, “two” and “three” respectively and add the background and foreground colors of our choice (foreground color just means the font color). As we already know we have to pack these label to get displayed on the main screen.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">label1<span style="color:#f92672">.</span>pack()
+label2<span style="color:#f92672">.</span>pack(fill<span style="color:#f92672">=</span>X)
+label3<span style="color:#f92672">.</span>pack(side<span style="color:#f92672">=</span>LEFT, fill<span style="color:#f92672">=</span>Y)
+</code></pre></div><p>By default, the label is going to be the size of the window. The size of the label depends on how big the text is. Fill means we want to fill the label as much as the X value of the parent is. So if we stretch the window or make it grow left and right. The first label is going to be of the same size. However, the second one will grow in the left or right direction as much as we grow the window. Similarly, in the third label, the label will grow in Y direction as much as the parent window is stretched.</p>
+<p>So, the first one will be on the top and will not grow or shrink in any direction. The second one is going to be in the middle and will grow in the X direction. The third one is going to be on the left side of the window and will grow in the Y direction.</p>
+<p>We can do this stuff by adding a frame to the main window. The procedure is same for this. The only thing we have to do is write the frame variable in place of parent variable in Label object.</p>
+<h2 id="final-code--tkinter">Final Code – Tkinter</h2>
+<p>The whole program combined together will look something like this,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+var <span style="color:#f92672">=</span> Tk()
+label1 <span style="color:#f92672">=</span> Label(var, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;one&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;red&#34;</span>, fg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;blue&#34;</span>)
+label2 <span style="color:#f92672">=</span> Label(var, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;two&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>, fg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yellow&#34;</span>)
+label3 <span style="color:#f92672">=</span> Label(var, text<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;three&#34;</span>, bg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;yellow&#34;</span>, fg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;black&#34;</span>)
+label1<span style="color:#f92672">.</span>pack()
+label2<span style="color:#f92672">.</span>pack(fill<span style="color:#f92672">=</span>X)
+label3<span style="color:#f92672">.</span>pack(side<span style="color:#f92672">=</span>LEFT, fill<span style="color:#f92672">=</span>Y)
+var<span style="color:#f92672">.</span>mainloop() 
+</code></pre></div>
+</article>
+
+        <footer>
+    
+</footer>
+    </div>
+  </body>
+</html>

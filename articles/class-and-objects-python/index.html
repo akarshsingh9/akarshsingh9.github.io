@@ -80,11 +80,11 @@ Below is the example for a simple Python class :</p>
  <span style="color:#66d9ef">def</span> __init__(self, name, marks):
     self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
     self<span style="color:#f92672">.</span>marks <span style="color:#f92672">=</span> marks
-    Student<span style="color:#f92672">.</span>studCount <span style="color:#f92672">+</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    Student<span style="color:#f92672">.</span>studCount <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">displayStudentCount</span>(self):
-    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Total no. of Students </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>, Student<span style="color:#f92672">.</span>studCount)
+    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#34;Total no. of Students </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>, Student<span style="color:#f92672">.</span>studCount)
  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">displayinfo</span>(self):
-    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Name : </span><span style="color:#e6db74">&#34;</span>, self<span style="color:#f92672">.</span>name, <span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">, Marks: </span><span style="color:#e6db74">&#34;</span>, self<span style="color:#f92672">.</span>marks)
+    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#34;Name : &#34;</span>, self<span style="color:#f92672">.</span>name, <span style="color:#e6db74">&#34;, Marks: &#34;</span>, self<span style="color:#f92672">.</span>marks)
 </code></pre></td></tr></table>
 </div>
 </div><p>The variable <strong>studCount</strong> is a class variable whose value is shared among all instances or objects of this class Student. The variable can be accessed as <strong>Student.studCount</strong> from inside the class or outside the class.</p>
@@ -100,10 +100,10 @@ Below is the example for a simple Python class :</p>
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">This will create the first object for the Student class</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
-student1 <span style="color:#f92672">=</span> Student(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Sam</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">80.5</span>)
-<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#e6db74">This would create the second object of Employee class</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
-student2 <span style="color:#f92672">=</span> Student(<span style="color:#e6db74"></span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">Roberts</span><span style="color:#e6db74">&#34;</span>, <span style="color:#ae81ff">85.0</span>)
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34;&#34;&#34;This will create the first object for the Student class&#34;&#34;&#34;</span>
+student1 <span style="color:#f92672">=</span> Student(<span style="color:#e6db74">&#34;Sam&#34;</span>, <span style="color:#ae81ff">80.5</span>)
+<span style="color:#e6db74">&#34;&#34;&#34;This would create the second object of Employee class&#34;&#34;&#34;</span>
+student2 <span style="color:#f92672">=</span> Student(<span style="color:#e6db74">&#34;Roberts&#34;</span>, <span style="color:#ae81ff">85.0</span>)
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="accessing-class-members">Accessing Class Members</h2>

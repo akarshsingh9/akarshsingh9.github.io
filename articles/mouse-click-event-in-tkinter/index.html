@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <title>How to implement mouse click event in Tkinter | Akarsh Singh</title>
+  </head>
+  <body>
+    <div class="container">
+        <nav>   
+    <div>
+        <a href="\">Akarsh Singh</a>
+        
+            
+            <a href="/articles/">Articles</a>
+        
+            
+            <a href="/projects/">Projects</a>
+        
+            
+            <a href="/index.xml">RSS</a>
+        
+    </div>
+</nav>
+        
+<section>
+    <div><img class="is-rounded" src="/images/articles/gui.png">
+    </div>   
+    <p>How to implement mouse click event in Tkinter</p>
+    
+    <time datetime="2020-03-07">Mar 7, 2020</time>
+    
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/cip-archive">cip-archive</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/python">python</a></span>
+        
+            
+            <span class="tag is-light"><a href="https://akarshsingh.com/tags/tkinter">tkinter</a></span>
+        
+    
+</section>
+<article>
+    <p><em>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 12th June 2017. Author of this post is Rahul Choudhary.</em></p>
+<p>Whenever we use Tkinter, we are not just limited to bind one function to one widget. With widgets, we can bind multiple events to it depending on what we do with that widget, it behaves in different kind of ways. We can have a button, and if we left click it, something happens and if you right click it, something else happens.</p>
+<p>Our goal in this article is to do something when one of the mouse button is clicked. That something is called mouse click event. The task here is to build a widget and if we left click, middle click or right click it, different things are going to happen. There will be three different functions for this.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leftclick</span>(event):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;left&#34;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">middleclick</span>(event):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;middle&#34;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rightclick</span>(event):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;right&#34;</span>)
+</code></pre></div><p>Instead of having a button, we will build a basic frame. It’s going to look like just an empty window but it will be an invisible frame.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">frame <span style="color:#f92672">=</span> Frame(var, width<span style="color:#f92672">=</span><span style="color:#ae81ff">300</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">250</span>)
+</code></pre></div><p>We can specify width and height of a window by using two simple keywords, width, and height. Now, we will bind the functions to the frame(widget).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">frame<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Button-1&gt;&#34;</span>, leftclick)
+frame<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Button-2&gt;&#34;</span>, middleclick)
+frame<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Button-3&gt;&#34;</span>, rightclick)
+</code></pre></div><p>Now, whenever we left click on the mouse, function leftclick will be called. Same goes for the other two functions.
+The only thing left to do is to pack the frame. Without packing, the frame will not show up.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">frame<span style="color:#f92672">.</span>pack()
+</code></pre></div><p>In this chapter, we have learned how to add multiple functions to a widget.</p>
+<h2 id="final-mouse-click-event-code">Final Mouse Click Event Code</h2>
+<p>The whole program will look like,</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tkinter <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+var <span style="color:#f92672">=</span> Tk()
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">leftclick</span>(event):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;left&#34;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">middleclick</span>(event):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;middle&#34;</span>)
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rightclick</span>(event):
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;right&#34;</span>)
+frame <span style="color:#f92672">=</span> Frame(var, width<span style="color:#f92672">=</span><span style="color:#ae81ff">300</span>, height<span style="color:#f92672">=</span><span style="color:#ae81ff">250</span>)
+frame<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Button-1&gt;&#34;</span>, leftclick)
+frame<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Button-2&gt;&#34;</span>, middleclick)
+frame<span style="color:#f92672">.</span>bind(<span style="color:#e6db74">&#34;&lt;Button-3&gt;&#34;</span>, rightclick)
+frame<span style="color:#f92672">.</span>pack()
+var<span style="color:#f92672">.</span>mainloop()
+</code></pre></div><p>So far until now, we have learned how to implement mouse click events, how to bind functions, make frames and structure our layout. Read more of our articles to Tkinter and Python. Share it with your friends if you like our article.</p>
+
+</article>
+
+        <footer>
+    
+</footer>
+    </div>
+  </body>
+</html>

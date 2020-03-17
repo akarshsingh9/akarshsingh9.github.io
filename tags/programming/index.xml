@@ -19,7 +19,7 @@
       <guid>https://akarshsingh.com/articles/class-and-objects-python/</guid>
       <description>This is an archived blog post from Codeinpython website that i used to run. Original post was created on 5th June 2017.
 The object oriented concepts in Python programming can be implemented using classes and objects. In this article, you will learn how to create class and object.
-Creating Class – 1 2  class ClassName: class_body   The class_body consists of all the components to define the class members such as data attributes and functions.</description>
+Creating Class – 1 2  class ClassName:class_body  The class_body consists of all the components to define the class members such as data attributes and functions.</description>
     </item>
     
     <item>
